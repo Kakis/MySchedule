@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateLessonViewController">
+            <connections>
+                <outlet property="assignmentTextfield" destination="oeX-li-p5Y" id="kCu-xg-ZoJ"/>
+                <outlet property="classroomTextfield" destination="bvK-JP-Zt2" id="P1V-wE-QDv"/>
+                <outlet property="pickerView" destination="kSD-Xt-veM" id="z7F-sI-53a"/>
+                <outlet property="subjectTextfield" destination="AiP-oY-bpf" id="wTy-8i-pBJ"/>
+                <outlet property="teacherTextfield" destination="2rG-lX-mvd" id="Yk7-Tf-6mQ"/>
+                <outlet property="updateAssignmentTextfield" destination="oeX-li-p5Y" id="huW-vI-Hb3"/>
+                <outlet property="updateClassroomTextfield" destination="bvK-JP-Zt2" id="ucw-Yy-V1T"/>
+                <outlet property="updateLessonLabel" destination="icK-bB-N7h" id="8Qj-er-0fZ"/>
+                <outlet property="updateSubjectTextfield" destination="AiP-oY-bpf" id="voz-EE-i1x"/>
+                <outlet property="updateTeacherTextfield" destination="2rG-lX-mvd" id="1Du-VQ-qVU"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Assignment" minimumFontSize="17" id="oeX-li-p5Y">
+                    <rect key="frame" x="21" y="262" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="dissmissAssignmentKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="Ima-K1-Rda"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Classroom" minimumFontSize="17" id="bvK-JP-Zt2">
+                    <rect key="frame" x="21" y="186" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="dissmissClassroomKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="vpz-a6-pRr"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" minimumFontSize="17" id="AiP-oY-bpf">
+                    <rect key="frame" x="20" y="148" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="dissmissSubjectKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="Xqi-oT-uUg"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teacher" minimumFontSize="17" id="2rG-lX-mvd">
+                    <rect key="frame" x="21" y="224" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="dissmissTeacherKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="ksY-9b-reh"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Je1-Pv-GlR">
+                    <rect key="frame" x="59" y="463" width="204" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="Update">
+                        <color key="titleColor" red="0.20972297022269776" green="0.47479758581207598" blue="0.48672672189999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="updateButton:" destination="-1" eventType="touchUpInside" id="Ba2-74-5Vz"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" id="kSD-Xt-veM">
+                    <rect key="frame" x="20" y="288" width="280" height="162"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="e3J-1s-m3D"/>
+                        <outlet property="delegate" destination="-1" id="U9l-wl-vDP"/>
+                    </connections>
+                </pickerView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="icK-bB-N7h">
+                    <rect key="frame" x="21" y="96" width="280" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.2097229702" green="0.47479758579999998" blue="0.48672672189999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update lesson:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FCb-PB-4lm">
+                    <rect key="frame" x="21" y="73" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.2097229702" green="0.47479758579999998" blue="0.48672672189999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
